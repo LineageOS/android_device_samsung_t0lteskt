@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +21,10 @@
 -include device/samsung/smdk4412-qcom-common/BoardCommonConfig.mk
 -include device/samsung/t0lte/BoardCommonConfig.mk
 
--include device/samsung/t0lteskt/BoardCommonConfig.mk
+# Use special kernel config for t0lteskt
+# Needs CONFIG_MACH_T0_KOR_SKT=y and CONFIG_TARGET_LOCALE_KOR=y
+TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+TARGET_KERNEL_CONFIG := lineageos_t0lteskt_defconfig
 
 # GPS
 BOARD_GPS_SET_PRIVACY := true
