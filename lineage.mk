@@ -14,7 +14,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 PRODUCT_DEVICE := t0lteskt
 PRODUCT_NAME := lineage_t0lteskt
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SHV-E250S
+PRODUCT_MODEL := SHV-E250
 PRODUCT_MANUFACTURER := samsung
 
 # Set build fingerprint / ID / Product Name ect.
