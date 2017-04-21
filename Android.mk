@@ -18,6 +18,8 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),t0lteskt)
 
+$(error This device tree is now deprecated. Please use t0ltekor device tree.)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 endif
